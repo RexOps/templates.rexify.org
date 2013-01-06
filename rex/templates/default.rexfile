@@ -1,0 +1,26 @@
+# Rexfile
+
+# enable new features
+use Rex -feature => 0.31;
+
+# set your username
+set user => "<user>";
+
+# set your password
+set password => "<password>";
+
+# enable password authentication
+set -passauth;
+
+# put your server in this group
+set group => servers => "server01", "server02", "server03";
+
+# an example task running on all servers of the ,,servers'' group
+task "example", group => "servers", sub {
+
+   my $output = run "ls -l /";
+   say $output;
+
+};
+
+

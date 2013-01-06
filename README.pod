@@ -1,0 +1,6 @@
+=head1 templates.rexify.org
+
+This is the code of templates.rexify.org.
+
+templates.rexify.org is a webservice for Rex templates.
+
