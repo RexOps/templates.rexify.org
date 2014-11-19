@@ -15,7 +15,7 @@ sub index {
 
    $self->respond_to(
       json => { json => \@templates },
-      html => {template => "index"},
+      html => {template => "start/index"},
    );
 
 }
